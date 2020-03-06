@@ -1,16 +1,16 @@
 exports.seed = async (knex) => {
   await knex("ingredients").insert([
-    { ingredient: "can of beer" },
-    { ingredient: "chicken" },
-    { ingredient: "paprika" },
-    { ingredient: "pepper" },
-    { ingredient: "chocolate chips" },
-    { ingredient: "flour" },
-    { ingredient: "sugar" },
-    { ingredient: "egg" },
-    { ingredient: "butter" },
-    { ingredient: "salt" },
-    { ingredient: "vanilla" },
-    { ingredient: "baking soda" }
+    { ingredient: "can of beer", recipe_id: 2 },
+    { ingredient: "chicken", recipe_id: 2 },
+    { ingredient: "paprika", recipe_id: 2 },
+    { ingredient: "pepper", recipe_id: 2 },
+    { ingredient: "chocolate chips", recipe_id: 1 },
+    { ingredient: "flour", recipe_id: 1 },
+    { ingredient: "sugar", recipe_id: 1 },
+    { ingredient: "egg", recipe_id: 1 },
+    { ingredient: "butter", recipe_id: 1 },
+    { ingredient: "salt", recipe_id: 1 },
+    { ingredient: "vanilla", recipe_id: 1 },
+    { ingredient: "baking soda", recipe_id: 1 }
   ])
 }
