@@ -20,6 +20,7 @@ function getRecipesByIngredients(id) {
     return db("ingredients as i")
         .join("recipes as r", "r.id", "=", "i.recipe_id")
         .where("i.id", id)
+        .select("i.ingredient", "r.name")
 }
 
 module.exports = {
